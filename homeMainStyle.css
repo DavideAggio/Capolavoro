@@ -1,0 +1,135 @@
+.info-bar {
+    background-color: #3f3f3f; /* Colore di sfondo della barra */
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0; /* Margine superiore e inferiore */
+    padding: 10px;
+    border: none; /* Bordo sottile per la barra */
+}
+
+.quote {
+    font-size: 16px; /* Dimensione del testo */
+    color: rgb(182, 182, 182); /* Colore del testo */
+    margin: 0 20px; /* Margine tra le citazioni */
+}
+
+
+.main{
+    margin: 200px auto;
+    max-width: 1100px;
+
+}
+
+.riga1{
+    margin: 8px -16px;   
+}
+
+.riga1 > .colonna{
+    padding: 15px;
+}
+
+.riga2{
+    margin: 8px -16px;
+}
+
+.riga2 > .colonna{
+    padding: 15px;
+}
+
+.riga3{
+    margin: 8px -16px;
+}
+
+.riga3 > .colonna{
+    padding: 15px;
+}
+
+.colonna{
+    float: left;
+    width: 33.33%;
+}
+
+.contenuto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: transparent;
+    padding: 10px;
+    transition: background-color 0.4s;
+    border-radius: 15px;
+}
+
+.contenuto:hover{
+    background-color: rgb(22, 22, 22);
+
+    .nomeGioco{
+        color: rgba(2,189,236,1);
+    }
+    .prezzoGioco{
+        color: rgba(2,189,236,1);
+    }
+}
+
+.info{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 6px;
+}
+
+
+.nomeGioco{
+    transition: all 0.3s ease 0s;
+    background-color: transparent;
+    display: inline;
+}
+
+.prezzoGioco{
+    transition: all 0.3s ease 0s;
+    background-color: transparent;
+    display: inline;
+    margin-left: auto;
+}
+
+/*-------------------Footer--------------------*/
+
+.containerFooter{
+    background-color: rgb(14, 14, 14);
+    margin-top: 600px;
+}
+
+.footer{
+    height: 300px;
+    background-color: rgb(14, 14, 14);
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footerInfo{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 2% 5%;
+}
+
+.footerInfo a,h3,p{
+    background-color: transparent;
+    padding: 10px;
+    transition: all 0.3s ease 0s;
+}
+
+.footerInfo h3{
+    color: rgba(2,124,155,0.8);
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.footerInfo a:hover,p:hover{
+    color: rgba(2,189,236,1);
+}

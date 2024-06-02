@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dead by Daylight</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <!--Logo-->
+        <a href="../home.html">
+            <div class="containerLogo">
+                <img class = "logo" src="../homeImages/logo.png" alt="Logo">
+                <span class="nomeSito">NebulaGames</span>
+            </div>
+        </a>
+
+        <!--Categorie e barra-->
+        <div>
+            <!--Barra di ricerca-->
+            <div class ="containerBarraRicerca">
+
+                <div class ="divBottoneRicerca">
+                    <button class="bottoneRicerca"><img class="lente" src="../homeImages/lente.png" alt="lente"></button>
+                </div>
+                <div class="barraRicerca">
+                    <input type="text" placeholder="Search..." class = "barraRicerca">
+                </div>
+            </div>  
+        </div>
+
+        <!--bottoni carrello e account-->
+        <div>
+
+            <div style="display: inline-block;">
+                <a href="#"><button class="bottoniNav"><img src="../homeImages/kart.png" alt="kart" class="imgBottoniNav"></button></a>
+            </div>
+
+            <div style="display: inline-block; padding-left: 10px;">
+                <a href="#"><button class="bottoniNav"><img src="../homeImages/user.png" alt="userPfp" class="imgBottoniNav"></button></a>
+            </div>
+
+        </div>
+
+    </header>
+    <div class="container">
+        <div class="header">
+            <img id="mainImage" src="../dbd/images/dbdCopertina.jpg" alt="Screenshot del gioco" class="main-image">
+            <div class="game-description">
+                <h1>Dead by Daylight</h1>
+                <p>Dead by Daylight è un horror game multigiocatore (4 contro 1), in cui un giocatore assume il ruolo del feroce Killer e gli altri 4 giocano come Sopravvissuti, cercando di sfuggire al Killer ed evitando di farsi catturare e uccidere.</p>
+                <div class="ratings">
+                    <p>Valutazioni recenti: <span class="recent-reviews">Perlopiù positiva (4,443)</span></p>
+                    <p>Tutte le valutazioni: <span class="total-reviews">Molto positiva (522,786)</span></p>
+                    <p>Data di rilascio: <span class="release-date">14 giu 2016</span></p>
+                    <p>Sviluppatore: <span class="developer">Behaviour Interactive Inc.</span></p>
+                    <p>Editore: <span class="publisher">Behaviour Interactive Inc.</span></p>
+                </div>
+                <div class="tags">
+                    <span class="tag">Horror</span>
+                    <span class="tag">Horror di sopravvivenza</span>
+                    <span class="tag">Multigiocatore</span>
+                </div>
+                <div class="actions">
+                    <button class="wishlist">Aggiungi alla Lista dei desideri</button>
+                    <button class="follow">Segui</button>
+                    <button class="ignore">Ignora</button>
+                </div>
+                <div class="purchase">
+                    <h2>Acquista Dead by Daylight</h2>
+                    <button class="add-to-cart">19,99€ - Aggiungi al carrello</button>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnails" id="thumbnails">
+            <img src="../dbd/images/dbdCopertina.jpg" alt="Thumbnail 1" class="thumbnail">
+            <img src="../dbd/images/dbdGameplay1.png" alt="Thumbnail 2" class="thumbnail">
+            <img src="../dbd/images/dbdGameplay3.jpg" alt="Thumbnail 3" class="thumbnail">
+            <img src="../dbd/images/dbdGameplay2.jpg" alt="Thumbnail 4" class="thumbnail">
+        </div>
+        <div class="system-requirements">
+            <h2>Requisiti di Sistema</h2>
+            <div class="requirements-container">
+                <div class="requirements">
+                    <h3>Minimi:</h3>
+                    <p><strong>Sistema operativo:</strong> Sistema Operativo a 64-bit (Windows 10)</p>
+                    <p><strong>Processore:</strong> Intel Core i3-4170 o AMD FX-8120</p>
+                    <p><strong>Memoria:</strong> 8 GB di RAM</p>
+                    <p><strong>Scheda video:</strong> GeForce GTX 460 1GB o AMD HD 6850 1GB compatibile con DX11</p>
+                    <p><strong>DirectX:</strong> Versione 11</p>
+                    <p><strong>Rete:</strong> Connessione internet a banda larga</p>
+                    <p><strong>Memoria:</strong> 50 GB di spazio disponibile</p>
+                </div>
+                <div class="requirements">
+                    <h3>Consigliati:</h3>
+                    <p><strong>Sistema operativo:</strong> Sistema Operativo a 64-bit (Windows 10)</p>
+                    <p><strong>Processore:</strong> Intel Core i3-4170 o AMD FX-8300 o superiore</p>
+                    <p><strong>Memoria:</strong> 8 GB di RAM</p>
+                    <p><strong>Scheda video:</strong> GeForce 760 o AMD HD 8800 o superiore con 4GB di RAM compatibile con DX11</p>
+                    <p><strong>DirectX:</strong> Versione 11</p>
+                    <p><strong>Rete:</strong> Connessione internet a banda larga</p>
+                    <p><strong>Memoria:</strong> 50 GB di spazio disponibile</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="comments-section">
+            <h2>Commenti</h2>
+            <div id="comments">
+                <div class="comment">
+                    <p><strong>Utente1:</strong> Ottimo gioco! Mi sono divertito molto.</p>
+                </div>
+                <div class="comment">
+                    <p><strong>Utente2:</strong> Il gioco è fantastico, ma potrebbe avere meno bug.</p>
+                </div>
+            </div>
+            <div class="comment-form">
+                <h3>Aggiungi un commento</h3>
+                <form id="commentForm">
+                    <input type="text" id="username" placeholder="Il tuo nome" required>
+                    <textarea id="commentText" placeholder="Il tuo commento" required></textarea>
+                    <button type="submit">Invia</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
